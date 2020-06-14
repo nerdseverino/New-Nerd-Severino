@@ -1,7 +1,7 @@
 ---
 title: Administrando pacotes com o Yum
 Date: '2020-03-11T11:33:38-03:00'
-tag:
+tags:
   - Yum
   - Centos
   - Rpm
