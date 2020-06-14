@@ -1,19 +1,19 @@
-baseurl = "https://www.fernandoike.com/"
-#title = "Fike's mnemonics"
-#author = "Fernando Ike"
+baseurl = "https://www.nerdseverino.com.br/"
+#title = "Fabrício Data Memories :D"
+#author = "Fabrício Machado"
 # Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
+copyright = "&copy; 2020. All rights reserved."
 canonifyurls = true
 paginate = 10
 theme = "hyde-x"
-disqusShortname = "fernandoike"
+disqusShortname = ""
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
 
 
 [author]
-    name = "Fernando Ike"
-    homepage = "https://www.fernandoike.com"
+    name = "Fabrício Machado"
+    homepage = "https://www.nerdseverino.com.br"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
@@ -32,14 +32,14 @@ DefaultContentLanguageInSubdir = true
   theme = "theme-base-07"
   googleAnalytics = "UA-34467089-1"
   home = "Home"
-  github = "https://github.com/fike"
+  github = "https://github.com/nerdseverino"
   bitbucket = ""
   stackOverflow = ""
-  linkedin = "https://www.linkedin.com/in/fernandoike/"
+  linkedin = "https://www.linkedin.com/in/fabriciomachado/"
   googleplus = ""
   facebook = ""
-  twitter = "https://twitter.com/fernandoike"
-  youtube = "https://www.youtube.com/channel/UCREewYvRYYQSLlJYEq_ZXvw"
+  twitter = "https://twitter.com/tuxsabe"
+  youtube = ""
 
   [menu]
     # Shown in the side menu.
@@ -54,13 +54,13 @@ DefaultContentLanguageInSubdir = true
       pre = "<i class='fa fa-list fa-fw'></i>"
       weight = 1
       identifier = "portuguese"
-      url = "https://www.fernandoike.com/tags/portugues"
+      url = "https://www.nerdseverino.com.br/tags/portugues"
     [[menu.main]]
       name = "English"
       pre = "<i class='fa fa-list fa-fw'></i>"
       weight = 2
       identifier = "english"
-      url = "https://www.fernandoike.com/tags/english"
+      url = "https://www.nerdseverino.com.br/tags/english"
     [[menu.main]]
       name = "About"
       pre = "<i class='fa fa-user fa-fw'></i>"
