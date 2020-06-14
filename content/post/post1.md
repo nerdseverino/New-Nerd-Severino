@@ -5,6 +5,7 @@ Categories:
  - "Dicas"
 tags:
  - "devops"
+ - english
 keywords:
   - "teste"
 autor:
