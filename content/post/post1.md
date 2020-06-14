@@ -4,8 +4,8 @@ date: 2020-02-04T15:30:32.000Z
 Categories:
  - "Dicas"
 tags:
- - "devops"
- - english
+  - english
+  - portugues
 keywords:
   - "teste"
 autor:
