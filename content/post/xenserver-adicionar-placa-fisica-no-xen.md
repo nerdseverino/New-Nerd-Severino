@@ -8,6 +8,7 @@ tags:
   - nic
   - placa de rede
   - linux
+  - portugues
 keywords:
   - xenserver
   - nic

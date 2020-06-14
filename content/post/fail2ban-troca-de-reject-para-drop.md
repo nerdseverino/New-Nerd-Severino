@@ -9,6 +9,7 @@ tags:
   - dicas
   - block
   - firewall
+  - portugues
 keywords:
   - fail2ban
   - secure

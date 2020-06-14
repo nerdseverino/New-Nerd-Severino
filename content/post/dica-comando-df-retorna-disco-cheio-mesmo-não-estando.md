@@ -8,6 +8,7 @@ tags:
   - df
   - linux
   - cheio
+  - portugues
 keywords:
   - dico
   - df

@@ -5,6 +5,7 @@ tag:
   - Yum
   - Centos
   - Rpm
+  - portugues
 categories:
   - Dicas
 
