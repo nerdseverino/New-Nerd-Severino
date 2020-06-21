@@ -9,7 +9,34 @@ theme = "hyde-x"
 disqusShortname = ""
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
+#---------------------------------------------------
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+  branch: master
+  site_url: https://www.nerdseverino.com.br
+#  logo_url: https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png
 
+publish_mode: editorial_workflow
+
+media_folder: "img/uploads"
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "article" # Used in the UI
+    folder: "/content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Type", name: "post", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "array"}
+      - {label: "Body", name: "body", widget: "markdown"}     
+
+#---------------------------------------------------
 
 [author]
     name = "Fabrício Machado"
@@ -74,3 +101,5 @@ DefaultContentLanguageInSubdir = true
   #    pre = "<i class='fa fa-phone fa-fw'></i>"
   #    weight = 3
   #    url = "/contact/"
+  #
+   
