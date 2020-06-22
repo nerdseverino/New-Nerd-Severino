@@ -10,9 +10,11 @@ tags:
   - portugues
 autoThumbnailImage: true
 thumbnailImagePosition: top
-thumbnailImage: /images/uploads/yum.png
-coverImage: /images/uploads/yum.png
+thumbnailImage: ''
+coverImage: ''
 ---
+![yum logo](/images/uploads/yum.png)
+
 Estamos acostumados com o **Yum**, mas geralmente usamos apenas a opção install do mesmo, mas existem outros parâmetros bem interessantes do **Yum **que podem ser úteis no seu dia-a-dia.
 
 Esse artigo tem o objetivo de mostrar alguns deles:
@@ -50,7 +52,6 @@ E a cereja do bolo é o comando History do **Yum**:
 `sudo yum history`
 
 Exemplo:
-
 
 ID     | Login user               | Date and time    | Action(s)      | Altered
 
@@ -91,7 +92,5 @@ ID     | Login user               | Date and time    | Action(s)      | Altered
 
  1 | System <unset>           | 2019-02-11 13:11 | Install        | 1390
 ```
-
-
 
 Com ele você consulta as últimas ações e é possível desfazer ou refazê-las conforme necessário.  :D
