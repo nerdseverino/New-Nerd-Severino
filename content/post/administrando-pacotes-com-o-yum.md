@@ -1,5 +1,6 @@
 ---
 title: Administrando pacotes com o Yum
+date: '2020-06-22T04:25:08-03:00'
 categories:
   - Dicas
 tags:
@@ -7,8 +8,9 @@ tags:
   - Centos
   - Rpm
   - portugues
-autoThumbnailImage: false
+autoThumbnailImage: true
 thumbnailImagePosition: top
+thumbnailImage: /images/uploads/yum.png
 coverImage: /images/uploads/yum.png
 ---
 Estamos acostumados com o **Yum**, mas geralmente usamos apenas a opção install do mesmo, mas existem outros parâmetros bem interessantes do **Yum **que podem ser úteis no seu dia-a-dia.
