@@ -1,9 +1,9 @@
 [submodule "themes/tale-hugo"]
 	path = themes/tale-hugo
 	url = https://github.com/EmielH/tale-hugo.git
-[submodule "static/admin"]
-	path = static/admin
-	url = https://github.com/nerdseverino/netlify-cms-base.git
 [submodule "themes/themes/hyde-x"]
 	path = themes/hyde-x
 	url = https://github.com/zyro/hyde-x.git
+[submodule "static/admin"]
+	path = static/admin
+	url = git@github.com:nerdseverino/netlify-cms-base.git
