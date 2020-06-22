@@ -5,7 +5,7 @@ sidemenu = "true"
 description = "About"
 +++
 ## English
-
+Under construction :P
 
 ## Português
 Tecnólogo Redes de Computadores.
@@ -15,4 +15,6 @@ Atualmente é Sysadmin.
 Entusiasta de DevOps e participante dos meetups de docker.
 Proprietário de dois Raspberry PI :D
 
-![image](https://nerdseverino.com.br/acfb200d-d3ab-4575-b2a3-fa1e08e41e20)
+<p align="center">
+<img src="/images/uploads/raspberry-pi-logo.png" width="350" title="Raspberry pi logo">
+</p>
