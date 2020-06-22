@@ -16,5 +16,5 @@ Entusiasta de DevOps e participante dos meetups de docker.
 Proprietário de dois Raspberry PI :D
 
 <p align="center">
-<img src="/images/uploads/raspberry-pi-logo.png" width="350" title="Raspberry pi logo">
+<img src="/images/uploads/raspberry-pi-logo.png" width="300" title="Raspberry pi logo">
 </p>
