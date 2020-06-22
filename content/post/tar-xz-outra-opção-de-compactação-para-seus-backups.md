@@ -2,7 +2,7 @@
 title: Tar.xz outra opção de compactação para seus backups.
 date: '2020-06-22T07:08:58-03:00'
 categories:
-  - dicas
+  - Dicas
 tags:
   - portugues
 keywords:
