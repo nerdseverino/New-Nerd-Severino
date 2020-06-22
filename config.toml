@@ -1,6 +1,4 @@
 baseurl = "https://www.nerdseverino.com.br/"
-#title = "Fabrício Data Memories :D"
-#author = "Fabrício Machado"
 # Shown in the side menu
 copyright = "&copy; 2020. All rights reserved."
 canonifyurls = true
@@ -12,6 +10,7 @@ DefaultContentLanguageInSubdir = true
 
 [author]
     name = "Fabrício Machado"
+    tagline = "Compartilhar o conhecimento é multiplicar o seu próprio!"
     homepage = "https://www.nerdseverino.com.br"
 
 [permalinks]
