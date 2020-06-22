@@ -26,7 +26,7 @@ DefaultContentLanguageInSubdir = true
 [params]
   # Shown in the home page
   truncate = true
-  defaultDescription = "The bytes of universe inside in a nutshell"
+  defaultDescription = "Dedicado a trazer informações sobre software e tecnologias da atualidade e coisas do Cotidiano."
   hideReadingTime = false
   theme = "theme-base-0f"
   googleAnalytics = ""
