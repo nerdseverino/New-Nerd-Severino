@@ -9,7 +9,7 @@ tags:
   - Rescue
 autoThumbnailImage: false
 thumbnailImagePosition: top
-coverImage: /images/uploads/cover-post.jpg
+coverImage: ''
 ---
 ![Ubuntu-logotipo](/images/uploads/kisspng-ubuntu-linux-logo-installation-computer-software-logo-material-5ad80a1797d3f9.8943267215241077996219.png)
 
