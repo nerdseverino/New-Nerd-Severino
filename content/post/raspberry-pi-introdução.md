@@ -66,7 +66,7 @@ Os componentes sem fio e Bluetooth agora estão dentro de uma lata metalizada. E
 
 O Pi3B + 802.11ac a 5 GHz tem desempenho de até 100 Mbit. Se você opera em um ambiente wifi congestionado, a mudança para 5 GHz pode oferecer algumas melhorias significativas. É sempre bom ter escolhas.
 
-## Base-1000 Ethernet
+**Base-1000 Ethernet**
 
 O Pi 3B + usa um chip Microchip LAN7515 para ethernet e hub USB 2.0. Portanto, ele pode tirar proveito de uma conexão Ethernet Gigabit, mas, devido às limitações do USB 2.0, seu rendimento máximo é de 330 Mbit.
 
