@@ -30,7 +30,7 @@ De lá pra cá várias versões do pequeno computador foram lançadas com difere
 
 ## Versões
 
-O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida\[ aqui [3]](https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml) e a versão mais atual enquanto escrevo esse texto que pode ser conferida \[aqui. [4]](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
+O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida [aqui \[3]](<(https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml>) e a versão mais atual enquanto escrevo esse texto que pode ser conferida [aqui. \[4]](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
 
 # Anatomia
 
@@ -38,21 +38,23 @@ O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo a
 
 Como mostrado na imagem a placa tem um design bem simples com os conectores ao redor da mesma. 
 
-**Chip BCM2837B0 1.4GHz**
+**Chip BCM2837B0 1.4GHz
+**
 
-O chip é o BCM2837B0, que foi aprimorado para melhorar a fonte de alimentação dos núcleos ARM. Isso significa que eles podem ter clock de 1,4 GHz (anteriormente 1,2 GHz) - um aumento de 16,7%. Ele é o coração da placa e tem poder de processamento pra uma variedade de tarefas.
+O chip é o BCM2837B0, que foi aprimorado para melhorar a fonte de alimentação dos núcleos ARM. Isso significa que eles podem ter clock de 1,4 GHz (anteriormente 1,2 GHz) - um aumento de 16,7%.
+ Ele é o coração da placa e tem poder de processamento pra uma variedade de tarefas.
 
-Enquanto era fabricado, decidiu-se adicionar um dissipador de calor metálico e aprimorar o PCB para ajudar na dissipação de calor. Isso deve ajudar a manter a tempertatura controlada com velocidades de clock mais altas.
-
-
+Enquanto era fabricado, decidiu-se adicionar um dissipador de calor metálico e aprimorar o PCB para ajudar na dissipação de calor. Isso deve ajudar a manter a temperatura controlada com velocidades de clock mais altas.
 
 ![Chip BCM2837B0 e seu dissipador metálico](/images/uploads/bcm2837b0-on-rasbperry-pi-3b_700-292x300.jpg)
 
-**Rede sem fio 802.11ac**
+**Rede sem fio 802.11ac
+**
 
-Ele usa o Cypress 43455 “MAC / base-band / rádio WiFi IEEE 802.11ac WiFi de chip único com Bluetooth 4.2 e receptor FM integrado” (receptor FM não conectado).
+Ele usa o Cypress 43455 “MAC / base-band / rádio WiFi IEEE 802.11ac WiFi de chip único com Bluetooth 4.2 e receptor FM integrado” (receptor FM não conectado).
 
-* A antena de cerâmica foi substituída por uma antena de cavidade ressonante Proant (mesma usada no Pi Zero W).
+* A antena de cerâmica foi substituída por uma antena de cavidade ressonante Proant (mesma usada no Pi Zero W)
+  .
 * Os componentes sem fio / Bluetooth foram incluídos em uma lata metalizada
 * O 802.11ac agora é suportado, o que significa que o Pi pode fazer WiFi a 5 GHz e 2,4 GHz
 
@@ -70,7 +72,9 @@ O Pi 3B + usa um chip Microchip LAN7515 para ethernet e hub USB 2.0. Portanto, e
 
 ![Microchip LAN7515](/images/uploads/lan7515-on-raspberry-pi-3b_700-300x267.jpg)
 
-## Especificações
+## 
+
+Especificações
 
 * Chip BCM2837B0
 * CPU córtex A53 quad-core de 64 bits
@@ -96,7 +100,5 @@ O Pi 3B + usa um chip Microchip LAN7515 para ethernet e hub USB 2.0. Portanto, e
 
 * Alimentação micro-usb
 * Fornecimento de 2,5 Amp recomendado
-
-
 
 No próximo artigo vou falar a respeito dos Sistemas operacionais que podemos usar nessa placa para fazer coisas divertidas :D
