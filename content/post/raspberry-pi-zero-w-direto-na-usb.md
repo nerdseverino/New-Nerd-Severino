@@ -12,8 +12,6 @@ coverImage: ''
 ---
 ![raspberry pi zero](/images/uploads/raspberry-pi-zero.png)
 
-
-
 Apesar de seu tamanho reduzido o Raspberry pi zero w é bem popular para projetos onde o tamanho seja um fator determinante.
 
 Hoje vamos mostrar como fazer a ligação dele ao computador por meio da interface USB.
@@ -45,8 +43,6 @@ Logo após o rootwait, acrescente mais um espaço e cole:
 Salve em seguida o arquivo.
 
 Com isso a parte do cartão do SD está pronta, você já pode inseri-lo no slot e energizar o Raspberry usando a porta com a legenda USB.
-
-
 
 Você pode também comprar em sites da internet adaptadores OTG USB dongle, existem variados modelos. 
 
