@@ -17,7 +17,7 @@ coverImage: ''
 
 ## Afinal o que é o tal do Raspberry?
 
-Existem no mercado uma categoria de equipamentos que chamamos de **SBC (Single Board Computer)** que traduzindo literalmente seria um **Computador de placa única** \[[1]](https://pt.wikipedia.org/wiki/Computador_de_placa_%C3%BAnica), que como o nome sugere tem todos os seus componentes em uma única placa para desempenhar as suas funções.\
+Existem no mercado uma categoria de equipamentos que chamamos de **SBC (Single Board Computer)** que traduzindo literalmente seria um **Computador de placa única** [\[1]](https://pt.wikipedia.org/wiki/Computadorde_placa%C3%BAnica), que como o nome sugere tem todos os seus componentes em uma única placa para desempenhar as suas funções.\
 Eles geralmente são chamados também de sistemas embarcados, placas de IoT, e outros.
 
 ## História
@@ -30,7 +30,7 @@ De lá pra cá várias versões do pequeno computador foram lançadas com difere
 
 ## Versões
 
-O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida [aqui \[3]](<(https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml>) e a versão mais atual enquanto escrevo esse texto que pode ser conferida [aqui. \[4]](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
+O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida \[aqui [3]]([(https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml](<(https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml>)) e a versão mais atual enquanto escrevo esse texto que pode ser conferida \[aqui. [4]](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
 
 # Anatomia
 
