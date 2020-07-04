@@ -17,12 +17,12 @@ coverImage: ''
 
 ## Afinal o que é o tal do Raspberry?
 
-Existem no mercado uma categoria de equipamentos que chamamos de **SBC (Single Board Computer)** que traduzindo literalmente seria um **Computador de placa única** \[[1]](https://pt.wikipedia.org/wiki/Computador_de_placa_%C3%BAnica), que como o nome sugere tem todos os seus componentes em uma única placa para desempenhar as suas funções.\
+Existem no mercado uma categoria de equipamentos que chamamos de **SBC (Single Board Computer)** que traduzindo literalmente seria um [**Computador de placa única**](https://pt.wikipedia.org/wiki/Computadorde_placa%C3%BAnica), que como o nome sugere tem todos os seus componentes em uma única placa para desempenhar as suas funções.\
 Eles geralmente são chamados também de sistemas embarcados, placas de IoT, e outros.
 
 ## História
 
-Em 2006 os primeiros conceitos de um computador que motivasse as crianças a desenvolverem algo criativo, ele foi baseado originalmente no microcontrolador Atmel ATmega644 e mais tarde usado a arquitetura ARM, um pacote do mesmo tamanho de uma memória stick USB, uma porta USB em uma extremidade e uma porta HDMI na outra. \[[2]](https://pt.wikipedia.org/wiki/Raspberry_Pi)
+Em 2006 os primeiros conceitos de um computador que motivasse as crianças a desenvolverem algo criativo, ele foi baseado originalmente no microcontrolador Atmel ATmega644 e mais tarde usado a arquitetura ARM, um pacote do mesmo tamanho de uma memória stick USB, uma porta USB em uma extremidade e uma porta HDMI na outra. Fonte: <https://pt.wikipedia.org/wiki/Raspberry_Pi>
 
 >  _O objetivo da Fundação era oferecer o computador por um preço bem acessível, em duas versões: US $ 25 e US $ 35. Eles começaram a aceitar encomendas pelo modelo B que era o de maior preço (US $ 35), em 29 de fevereiro de 2012, e o pelo modelo A, de menor preço (US $ 25), em 4 de Fevereiro de 2013. A diferença entre o Modelo A para o Modelo B, é que o primeiro não tem interface de rede._
 
@@ -30,7 +30,7 @@ De lá pra cá várias versões do pequeno computador foram lançadas com difere
 
 ## Versões
 
-O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida [aqui \[3]](<(https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml>) e a versão mais atual enquanto escrevo esse texto que pode ser conferida [aqui. \[4]](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
+O pessoal do [TechTudo ](https://www.techtudo.com.br/)fez uma lista a um tempo atrás com a descrição das principais versões disponíveis hoje que pode ser conferida [aqui](https://www.techtudo.com.br/listas/2018/12/raspberry-pi-conheca-todos-os-modelos-e-precos-do-minipc.ghtml) e a versão mais atual enquanto escrevo esse texto que pode ser conferida [aqui](https://www.techtudo.com.br/noticias/2019/09/tudo-sobre-o-raspberry-pi-4-veja-especificacoes-e-preco-do-mini-pc.ghtml).
 
 # Anatomia
 
