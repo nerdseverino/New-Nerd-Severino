@@ -1,6 +1,8 @@
 ---
 title: 'Raspberry PI - Introdução '
 date: '2020-07-04T07:40:23-03:00'
+categories:
+  - Dicas
 tags:
   - portugues
   - raspberry
