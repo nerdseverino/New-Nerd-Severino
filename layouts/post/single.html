@@ -9,7 +9,7 @@
     {{ end }}</span>
     {{ .Content }}
     <hr />
-    Para editar este post basta clicar <a href="https://github.com/nerdseverino/New-Nerd-Severino/tree/master/content/post{{ .File.Path }}">aqui</a>.
+    Para editar este post basta clicar <a href="https://github.com/nerdseverino/New-Nerd-Severino/tree/master/content/{{ .File.Path }}">aqui</a>.
   </div>
   {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
 </div>
