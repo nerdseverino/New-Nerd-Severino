@@ -4,7 +4,7 @@ copyright = "&copy; 2020. All rights reserved."
 canonifyurls = true
 paginate = 10
 theme = "hyde-x"
-disqusShortname = ""
+disqusShortname = "NerdSeverino"
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
 
