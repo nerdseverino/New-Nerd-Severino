@@ -114,3 +114,7 @@ Ao configurar um Raspberry Pi para criação de protótipos, é recomendável us
 <https://docs.microsoft.com/pt-br/windows/iot-core/tutorials/rpi>
 
 ![null](/images/uploads/windows-1.jpg)
+
+
+
+Update: Eu encontrei uma lista de mais distros linux e sistemas para o raspberry que pode ser conferida [clicando ](https://www.techiebouncer.com/2020/06/operating-systems-for-raspberry-pi-some.html)[aqui](https://www.techiebouncer.com/2020/06/operating-systems-for-raspberry-pi-some.html).
