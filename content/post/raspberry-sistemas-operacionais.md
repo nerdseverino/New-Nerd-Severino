@@ -1,6 +1,8 @@
 ---
 title: Raspberry - Sistemas operacionais
 date: '2020-07-04T14:11:44-03:00'
+categories:
+  - Dicas
 tags:
   - portuguese
   - raspberry
@@ -41,8 +43,6 @@ https://ubuntu-mate.org/raspberry-pi/
 
 ## 3 – DietPi
 
-
-
 Bom, o DietPi, assim como outros sistemas possui base Linux, e o melhor também é Debian. Segundo o site do sistema, ele é mais leve que o Raspbian Lite, e suas imagens são pequenas, algo em torno de 400mb. Além disso, o sistema conta com software próprios que vão de otimizações, configurações e até backup do sistema, realmente algo bem completo que merece ser testado.
 
 <https://dietpi.com/>
@@ -51,15 +51,11 @@ Bom, o DietPi, assim como outros sistemas possui base Linux, e o melhor também 
 
 ## 4 – Arch Linux ARM
 
-
-
 Bom, falar de Arch Linux é sem dúvida algo fácil, o sistema já é bem conhecido por ser estável, seguro e com uma comunidade sólida. No entanto, o que diferencia o sistema é os repositórios que também seguem o modelo rolling release. Assim, você sempre terá a versão mais recente do sistema bastando apenas manter o sistema atualizado.
 
 <https://archlinuxarm.org/>
 
-
-
-![](/images/uploads/arch-linux-logo.png)
+![null](/images/uploads/arch-linux-logo.png)
 
 ## 5 – FydeOS
 
@@ -81,8 +77,6 @@ Bom, o LibreELEC é um sistema operacional focado em consumo de navegação na i
 
 ![libreelec logo](/images/uploads/libreelec.png)
 
-
-
 ## 7 – RetroPie
 
 ## 
@@ -90,8 +84,6 @@ Bom, o LibreELEC é um sistema operacional focado em consumo de navegação na i
 Esse aqui dispensa grandes comentários. Sem dúvida nenhuma o RetroPie é o sistema operacional para jogos retro no Raspberry Pi. Com ele é possível fazer emulação de uma vasta coleção de plataformas. Assim, se você quer executar aqueles jogos antigos dos anos 80, 90 e 2000 achou o que procurava. E não se preocupe, o sistema também é compatível com jogos de fliperama e você consegue fazer tudo graças ao EmulationStation
 
 <https://retropie.org.uk/download/>
-
-
 
 ![retropie logo](/images/uploads/retropie.png)
 
@@ -105,21 +97,13 @@ Sim, é verdade há Kali Linux para ser instalado no raspberry Pi. O sistema tam
 
 ![Kali Logo](/images/uploads/kali-linux.png)
 
-
-
-## 9 - Android 
-
-
+## 9 - Android
 
 Existem alguns motivos pelos quais você pode instalar o Android no seu Raspberry Pi. Se você é um desenvolvedor de Android, por exemplo, é uma maneira barata de adicionar outro dispositivo para teste em seu arsenal. Todavia, essa não é a única razão.
 
 <https://raspbian-france.fr/download/and7_1-tablet-23012017.zip>
 
-
-
-![](/images/uploads/android-logo.png)
-
-
+![null](/images/uploads/android-logo.png)
 
 ## 10 - Windows IOT
 
@@ -129,6 +113,4 @@ Ao configurar um Raspberry Pi para criação de protótipos, é recomendável us
 
 <https://docs.microsoft.com/pt-br/windows/iot-core/tutorials/rpi>
 
-
-
-![](/images/uploads/windows-1.jpg)
+![null](/images/uploads/windows-1.jpg)
