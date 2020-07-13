@@ -1,6 +1,8 @@
 ---
 title: Raspberry - Pi Zero W direto na USB
 date: '2020-07-04T15:20:57-03:00'
+categories:
+  - Dicas
 tags:
   - portugues
   - raspberry
