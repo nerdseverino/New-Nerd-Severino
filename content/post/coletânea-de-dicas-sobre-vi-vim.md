@@ -42,4 +42,8 @@ Depois dessa introdução vou deixar vários links de dicas que me ajudaram muit
 * [Atualizando o VIM para versão 82 no ubuntu/debian](https://www.vivaolinux.com.br/dica/Atualizando-Instalando-o-VIM-82-UbuntuDebianMint-e-Derivados)
 * [Habilitar o highlight no VIM](https://www.vivaolinux.com.br/dica/Habilitar-highlight-na-busca-do-Vim)
 * [Mudar esquema de cores no VIM](https://www.vivaolinux.com.br/dica/Mudando-o-tema-do-Vim-esquema-de-cores)
-*
+* [Criando templates no VIM](https://www.vivaolinux.com.br/dica/Criando-Templates-no-VIM)
+* [Emulador de terminal no VIM](https://www.vivaolinux.com.br/dica/Emulador-de-terminal-no-Vim)
+* [Explorador de arquivos no VIM](https://www.vivaolinux.com.br/dica/netrw-o-explorador-de-arquivos-nativo-do-Vim)
+* [Usando comandos externos no texto](https://pt.wikibooks.org/wiki/Vim/Usando_comandos_externos)
+* [Usando comandos externos no texto 2](https://www.dicas-l.com.br/arquivo/usando_comandos_externos_no_vim__2_.php)
