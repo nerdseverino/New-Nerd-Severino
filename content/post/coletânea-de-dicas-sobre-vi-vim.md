@@ -32,7 +32,7 @@ Essa é uma das mais antigas que eu encontrei, mas existem outras, podem pesquis
 
 Depois dessa introdução vou deixar vários links de dicas que me ajudaram muito a melhorar no uso do VIM, sei que isso pode não parecer muito popular em tempos de VScode mas pode salvar vidas em várias situações:
 
-* [Mostrar núnero ao lado das linhas ](https://www.cyberciti.biz/faq/vim-show-line-numbers-by-default-on-linux/)
+* [Mostrar número ao lado das linhas ](https://www.cyberciti.biz/faq/vim-show-line-numbers-by-default-on-linux/)
 * [Localizar e substituir](https://www.cyberciti.biz/faq/vim-text-editor-find-and-replace-all-text/)
 * [Forçando o tipo de arquivo no vim](https://www.vivaolinux.com.br/dica/Como-forcar-o-tipo-de-arquivo-no-Vim)
 * [Substituir somente no bloco selecionado](https://www.vivaolinux.com.br/dica/Vim-substituindo-somente-no-bloco-selecionado)
