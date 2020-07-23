@@ -30,54 +30,16 @@ Com ela mapeamos os principais comandos que usamos para poder editar textos, mov
 
 Essa é uma das mais antigas que eu encontrei, mas existem outras, podem pesquisar sobre **VIM SHEET CHEAT** que vão aparecer vários modelos.
 
+Depois dessa introdução vou deixar vários links de dicas que me ajudaram muito a melhorar no uso do VIM, sei que isso pode não parecer muito popular em tempos de VScode mas pode salvar vidas em várias situações:
 
-
-Ref:
-
-
-
-http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
-
-
-
-https://www.cyberciti.biz/faq/vim-show-line-numbers-by-default-on-linux/
-
-
-
-https://www.cyberciti.biz/faq/vim-text-editor-find-and-replace-all-text/
-
-
-
-https://www.vivaolinux.com.br/dica/Como-forcar-o-tipo-de-arquivo-no-Vim
-
-
-
-https://www.vivaolinux.com.br/dica/Vim-substituindo-somente-no-bloco-selecionado
-
-
-
-https://www.vivaolinux.com.br/dica/Integrar-area-de-Transferencia-do-Vim-com-Ambiente-Grafico
-
-
-
-https://www.vivaolinux.com.br/dica/Recarregar-o-vimrc-sem-sair-do-Vim
-
-
-
-https://www.vivaolinux.com.br/dica/Salvar-automaticamente-no-Vim
-
-
-
-https://www.vivaolinux.com.br/dica/Atualizando-Instalando-o-VIM-82-UbuntuDebianMint-e-Derivados
-
-
-
-https://www.vivaolinux.com.br/dica/Habilitar-highlight-na-busca-do-Vim
-
-
-
-https://www.vivaolinux.com.br/dica/Mudando-o-tema-do-Vim-esquema-de-cores
-
-
-
-https://www.vivaolinux.com.br/dica/Emulador-de-terminal-no-Vim
+* [Mostrar núnero ao lado das linhas ](https://www.cyberciti.biz/faq/vim-show-line-numbers-by-default-on-linux/)
+* [Localizar e substituir](https://www.cyberciti.biz/faq/vim-text-editor-find-and-replace-all-text/)
+* [Forçando o tipo de arquivo no vim](https://www.vivaolinux.com.br/dica/Como-forcar-o-tipo-de-arquivo-no-Vim)
+* [Substituir somente no bloco selecionado](https://www.vivaolinux.com.br/dica/Vim-substituindo-somente-no-bloco-selecionado)
+* [Integrar área de transferência do VIM com ambiente gráfico](https://www.vivaolinux.com.br/dica/Integrar-area-de-Transferencia-do-Vim-com-Ambiente-Grafico)
+* [Recarregar preferências sem sair do VIM](https://www.vivaolinux.com.br/dica/Recarregar-o-vimrc-sem-sair-do-Vim)
+* [Salvando automaticamente com o VIM](https://www.vivaolinux.com.br/dica/Salvar-automaticamente-no-Vim)
+* [Atualizando o VIM para versão 82 no ubuntu/debian](https://www.vivaolinux.com.br/dica/Atualizando-Instalando-o-VIM-82-UbuntuDebianMint-e-Derivados)
+* [Habilitar o highlight no VIM](https://www.vivaolinux.com.br/dica/Habilitar-highlight-na-busca-do-Vim)
+* [Mudar esquema de cores no VIM](https://www.vivaolinux.com.br/dica/Mudando-o-tema-do-Vim-esquema-de-cores)
+*
