@@ -1,5 +1,5 @@
 ---
-title: Coletânea de Dicas sobre VI/VIM (Atualizado 30/07/2020
+title: Coletânea de Dicas sobre VI/VIM (Atualizado 30/07/2020)
 date: '2020-07-18T09:37:32-03:00'
 categories:
   - Dicas
