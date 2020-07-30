@@ -1,5 +1,5 @@
 ---
-title: Coletânea de Dicas sobre VI/VIM (Atualizado 29/07/2020
+title: Coletânea de Dicas sobre VI/VIM (Atualizado 30/07/2020
 date: '2020-07-18T09:37:32-03:00'
 categories:
   - Dicas
@@ -50,6 +50,8 @@ Depois dessa introdução vou deixar vários links de dicas que me ajudaram muit
 * [Encontrar próximo e anterior](https://www.vivaolinux.com.br/dica/Navegacao-facil-no-Vim-encontrar-proximo-e-anterior)
 * [Configuração de acordo com o tipo de arquivo](https://www.vivaolinux.com.br/dica/Vim-configuracao-de-acordo-com-o-tipo-de-arquivo)
 * [Acessibilidade no VIM](https://www.vivaolinux.com.br/dica/Acessibilidade-no-VIM)
-* [Personalizando a tela inicial do Vim](https://www.vivaolinux.com.br/dica/Turbinando-a-tela-inicial-do-Vim)
+* [Personalizando a tela inicial do Vi](https://www.vivaolinux.com.br/dica/Turbinando-a-tela-inicial-do-Vim)[ ](https://www.vivaolinux.com.br/dica/Turbinando-a-tela-inicial-do-Vim)
+* [Substituindo no VIM Like a BOSS](https://www.vivaolinux.com.br/dica/Vim-implemente-um-substituir-tudo-no-modo-BOSS)
+
 
 Vamos coletando mais e mais links sobre o VIM/VI caso conheça mais algum deixe nos comentários :D
