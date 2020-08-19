@@ -17,6 +17,8 @@ autoThumbnailImage: false
 thumbnailImagePosition: top
 coverImage: ''
 ---
+![Docker + Raspberry](/images/uploads/1-sld_ocnoe1dvkrij1whliw.png)
+
 Olá pessoal, estava tentando testar algumas aplicações no Raspberry PI, então eu pensei: Por quê não em contêiner?
 
 Então comecei a pesquisar um pouco sobre Docker na arquitetura ARM e durante os testes aconteceram algumas coisas interessantes que vou relatar aqui.
@@ -51,4 +53,16 @@ Se você quer o docker-compose também precisa seguir esses passos adicionais:
 
 **sudo pip3 -v install docker-compose **
 
-Até aqui deu tudo certo.
+Até aqui deu tudo certo. 
+
+Daí pensando pela lógica era apenas repetir o mesmo processo no Raspberry pi zero. Mas aí começou os contra-tempos:
+
+A instalação do Docker em si correu sem problemas, porém o docker-compose não consegui instalar de jeito nenhum.
+
+Mas pro Sysadmin velho de guerra isso é apenas uma oportunidade de fazer uma gabiarra a mais: rodar os containers usando o docker run mesmo! :D 
+
+Quanto aos containers, você precisa procurar imagens que sejam ARM no [Docker Hub](https://hub.docker.com/search?type=image&architecture=arm)
+
+
+
+[PS.: achei uma outra maneira de usar o compose usando um container e o docker run](https://www.freecodecamp.org/news/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef/)
