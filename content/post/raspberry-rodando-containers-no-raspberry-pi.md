@@ -23,4 +23,20 @@ Então comecei a pesquisar um pouco sobre Docker na arquitetura ARM e durante os
 
 Para essa primeira rodada de testes foi usada a última versão disponível do [Raspbian ](https://www.raspberrypi.org/downloads/raspberry-pi-os/)que foi gravada nos cartões de memória. 
 
-Aqui tem um tutorial do [Blog do Edivaldo](https://www.edivaldobrito.com.br/docker-no-raspberry-pi-com-raspbian/#:~:text=Como%20instalar%20o%20Docker%20no%20Raspberry%20pi%20com%20Raspbian,-Para%20instalar%20o&text=Como%20voc%C3%AA%20pode%20ver%2C%20o,Docker%2C%20que%20destaca%20muitos%20aplicativos.) ensinando a fazer a instalação no Raspberry
+[Aqui tem um tutorial ensinando a fazer a instalação no Raspberry.](https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl)
+
+Bom pra deixar mais claro os testes, usei 2 modelos diferentes de Raspberry:
+
+\- Raspberry Pi 3 Model B Rev 1.2
+
+\- Raspberry Pi Zero W Rev 1.1
+
+Bom então começando os trabalhos com o Pi "Maior" eu instalei o Raspbian Lite no cartão e logo depois os pacotes recomendados.
+
+Nesse passo deu tudo certo sem erros.
+
+Depois vem a hora de executar o script de instalação do Docker, que é uma mão na roda pra fazer essa instalação.
+
+No final da instalação é necessário adicionar o usuário PI ao grupo docker:
+
+**sudo usermod -aG docker pi **
