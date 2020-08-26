@@ -103,17 +103,17 @@ Pra facilitar criamos um script que ajusta PATH para os comandos do samba:
 
 **vim /etc/profile.d/samba4.sh**
 
-```if [ $(id -u) -eq 0 ]```
+`if [ $(id -u) -eq 0 ]`
 
-```then```
+`then`
 
-```PATH="/usr/local/samba/sbin:$PATH"```
+`PATH="/usr/local/samba/sbin:$PATH"`
 
-```fi```
+`fi`
 
-```PATH="/usr/local/samba/bin:$PATH"```
+`PATH="/usr/local/samba/bin:$PATH"`
 
-```export PATH```
+`export PATH`
 
 Damos permissão com:
 
@@ -125,27 +125,29 @@ Agora vem a parte mais importante do processo: Provisionamento do Domínio
 
 Onde:
 
-\    **domain provision** = para elevar o SAMBA a controlador de domínio;
+```
+**domain provision** = para elevar o SAMBA a controlador de domínio;
 
-\    **–use-rfc2307** = ativa o Network Information Server (NIS);
+**–use-rfc2307** = ativa o Network Information Server (NIS);
 
-\    **–interactive** = Modo interativo que permite realizar as configurações do domínio.
+**–interactive** = Modo interativo que permite realizar as configurações do domínio.
+```
 
 Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção interativa no provisionamento, são elas:
 
-\    **Realm \[HOME.LOCAL]** : Se o “/etc/hosts” e o “/etc/resolv.conf” estiverem definidos basta pressionar ENTER, caso não estejam configurados digite o nome do domínio desejado.
+   **Realm \[HOME.LOCAL]** : Se o “/etc/hosts” e o “/etc/resolv.conf” estiverem definidos basta pressionar ENTER, caso não estejam configurados digite o nome do domínio desejado.
 
-\    **Domain : \[HOME] **: “pressione enter”;
+   **Domain : \[HOME] **: “pressione enter”;
 
    **Server Role (dc, manber, standalone,) \[dc]** : Como utilizaremos nosso SAMBA como DC basta pressionar ENTER;
 
-   **DNS backend (SAMBA_INTERNAL, BIND9, BIND9_DLZ) \[SAMBA_INTERNAL]** : O DNS que iremos escolher o SAMBA_INTERNAL que é o padrão da instalação, bastando pressionar “ENTER”;
+  **DNS backend (SAMBA_INTERNAL, BIND9, BIND9_DLZ) \[SAMBA_INTERNAL]** : O DNS que iremos escolher o SAMBA_INTERNAL que é o padrão da instalação, bastando pressionar “ENTER”;
 
   **DNS forwarder IP address (write ‘none’ to disable forwarding) \[192.168.2.22]** : Aqui onde definimos o servidor que vai fazer a resolução de nomes externos, pois os nomes de máquina internos vão ser resolvidos pelo SAMBA_INTERNAL
 
-   ** Administrator password**: Definição da senha de administrador deve conter “letras, números e caracteres especiais” para que não aja erro no processo de provisionamento;
+  ** Administrator password**: Definição da senha de administrador deve conter “letras, números e caracteres especiais” para que não aja erro no processo de provisionamento;
 
-\    **Retype password**: Repita a senha digitada anteriormente.
+  **Retype password**: Repita a senha digitada anteriormente.
 
 Existem mais alguns passos para colocarmos nosso samba a funcionar a todo vapor :D
 
@@ -177,27 +179,27 @@ Agora só precisamos fazer um script para manejar o samba através do SystemD
 
 **vim /lib/systemd/system/samba-dc.service**
 
-```[Unit]```
+`[Unit]`
 
-```Description= Samba 4 Active Directory```
+`Description= Samba 4 Active Directory`
 
-```After=syslog.target network.target remote-fs.target nss-lookup.target```
+`After=syslog.target network.target remote-fs.target nss-lookup.target`
 
-```[Service]```
+`[Service]`
 
-```Type=forking```
+`Type=forking`
 
-```LimitNOFILE=16384```
+`LimitNOFILE=16384`
 
-```ExecStart=/usr/local/samba/sbin/samba -D```
+`ExecStart=/usr/local/samba/sbin/samba -D`
 
-```ExecReload=/usr/bin/kill -HUP $MAINPID```
+`ExecReload=/usr/bin/kill -HUP $MAINPID`
 
-```PIDFile=/usr/local/samba/var/run/samba.pid```
+`PIDFile=/usr/local/samba/var/run/samba.pid`
 
-```[Install]```
+`[Install]`
 
-```WantedBy=multi-user.target```
+`WantedBy=multi-user.target`
 
 Agora podemos habilitar ele na inicialização do sistema:
 
@@ -207,9 +209,7 @@ E por fim iniciar o serviço:
 
 **systemctl start samba-dc**
 
-# 
-
-Bônus:
+# Bônus:
 
 Se você não quer desativar o** Selinux** e o **Firewall** segue os passos abaixo pra não ser atrapalhado pelos dois:
 
