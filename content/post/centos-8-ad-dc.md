@@ -23,114 +23,116 @@ coverImage: ''
 
 # O que é o Samba?
 
-
-
 O Samba 4.x compreende um servidor de diretório LDAP, um servidor de autenticação Heimdal Kerberos, um servidor DNS dinâmico e implementações de todas as chamadas de procedimento remoto necessários para o Active Directory.
-
-
 
 Para quem vem do mundo Windows está acostumando com o conceito de Active Directory e com o Samba 4 isso é possível, gerenciar todos os logins e polices de estações windows a partir de um servidor central.
 
-
-
 Para iniciar os trabalhos vamos adicionar o repositório EPEL no Centos:
 
-
-
-**yum -y install epel-release**
-
-
+**yum -y install epel-release
+**
 
 E depois temos que ativar o repositório PowerTools
 
-
-
-**yum config-manager --set-enabled PowerTools**
-
-
+**yum config-manager --set-enabled PowerTools
+**
 
 E rodamos a atualização do servidor
 
-
-
-**yum update -y**
-
-
+**yum update -y
+**
 
 Depois disso é recomendado você reiniciar o servidor.
 
-
-
 De volta ao sistema agora vamos instalar as dependências para podermos compilar o samba 4 com role AD-DC:
 
-**yum install docbook-style-xsl gcc gdb gnutls-devel gpgme-devel jansson-devel keyutils-libs-devel krb5-workstation libacl-devel libaio-devel libarchive-devel libattr-devel libblkid-devel libtasn1 libtasn1-tools libxml2-devel libxslt lmdb-devel openldap-devel pam-devel perl perl-ExtUtils-MakeMaker perl-Parse-Yapp popt-devel python3-cryptography python3-dns python3-gpg python36-devel readline-devel rpcgen systemd-devel tar zlib-devel cups-devel wget -y**
+**
+yum install docbook-style-xsl gcc gdb gnutls-devel gpgme-devel jansson-devel keyutils-libs-devel krb5-workstation libacl-devel libaio-devel libarchive-devel libattr-devel libblkid-devel libtasn1 libtasn1-tools libxml2-devel libxslt lmdb-devel openldap-devel pam-devel perl perl-ExtUtils-MakeMaker perl-Parse-Yapp popt-devel python3-cryptography python3-dns python3-gpg python36-devel readline-devel rpcgen systemd-devel tar zlib-devel cups-devel wget -y
+**
 
-Em seguida, vamos editar o arquivo hosts
+Em seguida, vamos editar o arquivo hosts
 
-**vim /etc/hosts**
+**
+vim /etc/hosts
+**
 
-`192.168.2.30     srvdc01.home.local    srvdc01 `
+`192.168.2.30     srvdc01.home.local    srvdc01`
 
-**Obs.: Ajuste o IP e o nome conforme a sua configuração.**
-
-
+**Obs.: Ajuste o IP e o nome conforme a sua configuração.
+**
 
 Depois a gente configura a resolução de nomes do servidor, vai ser importante mais pra frente:
 
-**vim /etc/resolv.conf**
+**vim /etc/resolv.conf
+**
 
-`domain home.local`
+`domain home.local`
 
-`nameserver 192.168.2.22`
+`nameserver 192.168.2.22`
 
-`search srvdc01.home.local`
-
-
+`search srvdc01.home.local`
 
 Após configurar e salvar o “/etc/resolv.conf” execute o comando “chattr +i” para garantir que o arquivo não seja modificado pelo sistema.
 
-**chattr +i /etc/resolv.conf**
+**
+chattr +i /etc/resolv.conf
+**
 
+Até aqui apenas ajustamos o sistema para receber o samba, agora vamos baixar o samba e começar a trabalhar nele :D
 
+**
+wget https://ftp.samba.org/pub/samba/samba-latest.tar.gz
+**
 
-Até aqui apenas ajustamos o sistema para receber o samba, agora vamos baixar o samba e começar a trabalhar nele :D
+Descompactar os arquivos
 
-**wget https://ftp.samba.org/pub/samba/samba-latest.tar.gz**
+**
+tar -xzvf samba-latest.tar.gz
+**
 
-Descompactar os arquivos
+Entrar na pasta
 
-**tar -xzvf samba-latest.tar.gz**
+**cd samba-4.12.6
+**
 
-Entrar na pasta
+E rodar o "./configure"
 
-**cd samba-4.12.6**
+**
+./configure
+**
 
-E rodar o "./configure"
+Nesse ponto ele vai verificar se o sistema atende todos os requisitos para compilar o samba 4, caso tudo esteja certo ele vai apresentar a mensagem abaixo:
 
-**./configure**
+_
+'configure' finished successfully (1m23.880s)
+_
 
-Nesse ponto ele vai verificar se o sistema atende todos os requisitos para compilar o samba 4, caso tudo esteja certo ele vai apresentar a mensagem abaixo:
+Agora é a vez do "Make"
 
-_'configure' finished successfully (1m23.880s)_
+**
+make 
+**
 
-Agora é a vez do "Make"
+E por último o "Install" pra colocar tudo no lugar correto dentro do sistema.
 
-**make **
+**
+make install
+**
 
-E por último o "Install" pra colocar tudo no lugar correto dentro do sistema.
+Se tudo terminar bem o resultado será esse:
 
-**make install**
+_
+'build' finished successfully (20m34.783s)
+_
 
-Se tudo terminar bem o resultado será esse:
+Pra facilitar criamos um script que ajusta PATH para os comandos do samba: 
 
-_'build' finished successfully (20m34.783s)_
-
-Pra facilitar criamos um script que ajusta PATH para os comandos do samba: 
-
-**vim /etc/profile.d/samba4.sh**
+**
+vim /etc/profile.d/samba4.sh
+**
 
 ```
-if [ $(id -u) -eq 0 ]
+if [ $(id -u) -eq 0 ]
 ```
 
 ```
@@ -153,17 +155,19 @@ PATH="/usr/local/samba/bin:$PATH"
 export PATH 
 ```
 
-
-
 Damos permissão com:
 
-**chmod +x /etc/profile.d/samba4.sh**
+**
+chmod +x /etc/profile.d/samba4.sh
+**
 
-Agora vem a parte mais importante do processo: Provisionamento do Domínio
+Agora vem a parte mais importante do processo: Provisionamento do Domínio
 
-**samba-tool domain provision --use-rfc2307 --interactive**
+**
+samba-tool domain provision --use-rfc2307 --interactive
+**
 
-Onde:
+Onde:
 
 \    **domain provision** = para elevar o SAMBA a controlador de domínio;
 
@@ -171,9 +175,7 @@ Damos permissão com:
 
 \    **–interactive** = Modo interativo que permite realizar as configurações do domínio.
 
-Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção interativa no provisionamento, são elas:
-
-
+Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção interativa no provisionamento, são elas:
 
 \    **Realm \[HOME.LOCAL]** : Se o “/etc/hosts” e o “/etc/resolv.conf” estiverem definidos basta pressionar ENTER, caso não estejam configurados digite o nome do domínio desejado.
 
@@ -189,42 +191,46 @@ Damos permissão com:
 
 \    **Retype password**: Repita a senha digitada anteriormente.
 
-
-
 Existem mais alguns passos para colocarmos nosso samba a funcionar a todo vapor :D
 
 Copiar o krb5.conf para o local correto:
 
-**cp /usr/local/samba/private/krb5.conf /etc/**
+**cp /usr/local/samba/private/krb5.conf /etc/
+**
 
-Criar alguns links para funcionando do winbind:
+Criar alguns links para funcionando do winbind:
 
-**ln -s /usr/local/samba/lib/libnss_winbind.so.2 /lib/libnss_winbind.so**
+**
+ln -s /usr/local/samba/lib/libnss_winbind.so.2 /lib/libnss_winbind.so
+**
 
-**ln -s /lib/libnss_winbind.so /lib/libnss_winbind.so.2**
+**ln -s /lib/libnss_winbind.so /lib/libnss_winbind.so.2
+**
 
-**ln -s /usr/local/samba/lib/libnss_winbind.so.2 /lib64/libnss_winbind.so**
+**ln -s /usr/local/samba/lib/libnss_winbind.so.2 /lib64/libnss_winbind.so
+**
 
-**ln -s /lib/libnss_winbind.so /lib64/libnss_winbind.so.2**
-
-
+**ln -s /lib/libnss_winbind.so /lib64/libnss_winbind.so.2
+**
 
 E ajustarmos o mecanismo de autenticação do Linux (CentOS) para usar as contas do samba também:
 
-**vim /etc/nsswitch.conf**
+**
+vim /etc/nsswitch.conf
+**
 
- Vai ficar assim:
+Vai ficar assim:
 
-` passwd:     files sss winbind`
+`passwd:     files sss winbind`
 
-`group:      files sss winbind `
+`group:      files sss winbind`
 
-Agora só precisamos fazer um script para manejar o samba através do SystemD
+Agora só precisamos fazer um script para manejar o samba através do SystemD
 
 **vim /lib/systemd/system/samba-dc.service**
 
 ```
-[Unit]
+[Unit]
 ```
 
 ```
@@ -275,43 +281,59 @@ PIDFile=/usr/local/samba/var/run/samba.pid
 WantedBy=multi-user.target 
 ```
 
-Agora podemos habilitar ele na inicialização do sistema:
+Agora podemos habilitar ele na inicialização do sistema:
 
-**systemctl enable samba-dc **
+**
+systemctl enable samba-dc 
+**
 
-E por fim iniciar o serviço:
+E por fim iniciar o serviço:
 
-**systemctl start samba-dc **
+**
+systemctl start samba-dc 
+**
 
+# 
 
+Bônus:
 
-# Bônus:
-
-Se você não quer desativar o** Selinux e o Firewall** segue os passos abaixo pra não ser atrapalhado pelos dois:
+Se você não quer desativar o** Selinux e o Firewall** segue os passos abaixo pra não ser atrapalhado pelos dois:
 
 Firewall: 
 
-**firewall-cmd --permanent --add-service=samba**
+**
+firewall-cmd --permanent --add-service=samba
+**
 
-**firewall-cmd --reload**
+**firewall-cmd --reload
+**
 
-Selinux:
+Selinux:
 
-*  instalar o pacote policycoreutils-python-utils
+* instalar o pacote policycoreutils-python-utils
 
-**yum install policycoreutils-python-utils**
+**
+yum install policycoreutils-python-utils
+**
 
-* executar os comandos abaixo:
+* 
 
-**setenforce 0**
+executar os comandos abaixo:
 
-**cd /tmp**
+**setenforce 0
+**
 
-**grep denied /var/log/audit/audit.log > selinuxloginfails**
+**cd /tmp
+**
 
-**audit2allow -M samba4 -i selinuxloginfails**
+**grep denied /var/log/audit/audit.log > selinuxloginfails
+**
 
-**semodule -i samba4.pp**
+**audit2allow -M samba4 -i selinuxloginfails
+**
+
+**semodule -i samba4.pp
+**
 
 **setenforce 1**
 
