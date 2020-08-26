@@ -126,11 +126,11 @@ Agora vem a parte mais importante do processo: Provisionamento do Domínio
 Onde:
 
 ```
-**domain provision** = para elevar o SAMBA a controlador de domínio;
+domain provision = para elevar o SAMBA a controlador de domínio;
 
-**–use-rfc2307** = ativa o Network Information Server (NIS);
+–use-rfc2307 = ativa o Network Information Server (NIS);
 
-**–interactive** = Modo interativo que permite realizar as configurações do domínio.
+–interactive = Modo interativo que permite realizar as configurações do domínio.
 ```
 
 Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção interativa no provisionamento, são elas:
