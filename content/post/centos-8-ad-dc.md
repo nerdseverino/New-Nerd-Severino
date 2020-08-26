@@ -49,7 +49,7 @@ Em seguida, vamos editar o arquivo hosts
 
 **vim /etc/hosts**
 
-`192.168.2.30     srvdc01.home.local    srvdc01`
+`192.168.2.7     srvdc01.home.local    srvdc01`
 
 **Obs.: Ajuste o IP e o nome conforme a sua configuração.**
 
@@ -137,7 +137,7 @@ Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção in
 
    **Realm \[HOME.LOCAL]** : Se o “/etc/hosts” e o “/etc/resolv.conf” estiverem definidos basta pressionar ENTER, caso não estejam configurados digite o nome do domínio desejado.
 
-   **Domain : \[HOME] **: “pressione enter”;
+   **Domain : \[HOME] ** : “pressione enter”;
 
    **Server Role (dc, manber, standalone,) \[dc]** : Como utilizaremos nosso SAMBA como DC basta pressionar ENTER;
 
@@ -145,7 +145,7 @@ Ele vai solicitar algumas informações nesse ponto pois escolhemos a opção in
 
   **DNS forwarder IP address (write ‘none’ to disable forwarding) \[192.168.2.22]** : Aqui onde definimos o servidor que vai fazer a resolução de nomes externos, pois os nomes de máquina internos vão ser resolvidos pelo SAMBA_INTERNAL
 
-  ** Administrator password**: Definição da senha de administrador deve conter “letras, números e caracteres especiais” para que não aja erro no processo de provisionamento;
+  ** Administrator password** : Definição da senha de administrador deve conter “letras, números e caracteres especiais” para que não aja erro no processo de provisionamento;
 
   **Retype password**: Repita a senha digitada anteriormente.
 
@@ -211,7 +211,7 @@ E por fim iniciar o serviço:
 
 # Bônus:
 
-Se você não quer desativar o** Selinux** e o **Firewall** segue os passos abaixo pra não ser atrapalhado pelos dois:
+Se você não quer desativar o **Selinux** e o **Firewall** segue os passos abaixo pra não ser atrapalhado pelos dois:
 
 Firewall: 
 
