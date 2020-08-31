@@ -4,7 +4,7 @@
 
 
 [context.production.environment]
-   HUGO_VERSION = "0.55.1"
+   HUGO_VERSION = "0.63.1"
 
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
