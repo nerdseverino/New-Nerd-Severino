@@ -11,7 +11,7 @@
 
   [plugins.inputs]
     # Where should data files reside
-    dataDir = "content/post"
+    dataDir = "_data"
 
     # All the feeds we wish to gather for use in the build
 
