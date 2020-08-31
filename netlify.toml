@@ -15,7 +15,7 @@
 
   [plugins.inputs]
     # Where should data files reside
-    dataDir = "static"
+    dataDir = "src/_data"
 
     # All the feeds we wish to gather for use in the build
     [[plugins.inputs.feeds]]
