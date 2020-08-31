@@ -6,10 +6,6 @@
 [context.production.environment]
    HUGO_VERSION = "0.63.1"
 
-[build]
-  command = "npm run build"
-  publish = "public"
-
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
