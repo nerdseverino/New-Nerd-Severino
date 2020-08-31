@@ -65,6 +65,12 @@ DefaultContentLanguageInSubdir = true
       weight = 3
       identifier = "about"
       url = "/about/"
+    [[menu.main]]
+      name = "RSS"
+      pre = "<i class='fa fa-rss fa-fw'></i>"
+      weight = 3
+      identifier = "rss"
+      url = "/index.xml"
 
 
   #  [[menu.main]]
