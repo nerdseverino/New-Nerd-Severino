@@ -12,7 +12,7 @@
 
   [plugins.inputs]
     # Where should data files reside
-    dataDir = "netlify-plugin-fetch-feeds/src/_data"
+    dataDir = "src/_data"
 
     [[plugins.inputs.feeds]]
       name = "nerdseverinofeed"
