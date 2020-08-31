@@ -14,6 +14,11 @@
     # Where should data files reside
     dataDir = "src/_data"
     [[plugins.inputs.feeds]]
-      name = "Nerd Severino Feed"
+      name = "nerdseverinofeed"
+      url = "http://nerdseverino.com.br/feed.json"
+      ttl = 3600
+
+    [[plugins.inputs.feeds]]
+      name = "NerdSeverinoFeed"
       url = "https://www.nerdseverino.com.br/index.xml"
       ttl = 86400
