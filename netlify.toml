@@ -17,12 +17,6 @@
   [plugins.inputs]
     # Where should data files reside
     dataDir = "src/_data"
-
-    # All the feeds we wish to gather for use in the build
-    [[plugins.inputs.feeds]]
-      name = "Nerd Severino Feed"
-      url = "http://nerdseverino.com.br/feed.json"
-      ttl = 120
     [[plugins.inputs.feeds]]
       name = "Nerd Severino Feed"
       url = "https://www.nerdseverino.com.br/index.xml"
