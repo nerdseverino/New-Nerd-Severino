@@ -1,6 +1,25 @@
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.55.1"
 
+# Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
+[[plugins]]
+  package = "netlify-plugin-fetch-feeds"
+
+  [plugins.inputs]
+    # Where should data files reside
+    dataDir = "/content/post"
+
+    # All the feeds we wish to gather for use in the build
+
+    [[plugins.inputs.feeds]]
+      name = "nerdseverinofeed"
+      url = "http://nerdseverino.com.br/feed.json"
+      ttl = 3600
+    [[plugins.inputs.feeds]]
+      name = "NerdSeverinoFeed"
+      url = "https://www.nerdseverino.com.br/index.xml"
+      ttl = 86400
+
 
 [context.production.environment]
    HUGO_VERSION = "0.55.1"
