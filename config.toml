@@ -52,19 +52,26 @@ DefaultContentLanguageInSubdir = true
       pre = "<i class='fa fa-list fa-fw'></i>"
       weight = 1
       identifier = "portuguese"
-      url = "https://www.nerdseverino.com.br/tags/portugues"
+      url = "/tags/portugues"
     [[menu.main]]
       name = "English"
       pre = "<i class='fa fa-list fa-fw'></i>"
       weight = 2
       identifier = "english"
-      url = "https://www.nerdseverino.com.br/tags/english"
+      url = "/tags/english"
     [[menu.main]]
       name = "About"
       pre = "<i class='fa fa-user fa-fw'></i>"
       weight = 3
       identifier = "about"
       url = "/about/"
+
+    [[menu.main]]
+      name = "RSS"
+      pre = "<i class='fa fa-user fa-fw'></i>"
+      weight = 3
+      identifier = "about"
+      url = "https://www.nerdseverino.com.br/index.xml"
 
 
   #  [[menu.main]]
