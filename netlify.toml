@@ -4,7 +4,7 @@
 
 
 [context.production.environment]
-   HUGO_VERSION = "0.63.1"
+   HUGO_VERSION = "0.74.3"
 
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
