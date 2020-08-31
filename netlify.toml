@@ -5,7 +5,6 @@
 
 [context.production.environment]
    HUGO_VERSION = "0.63.1"
-   command = npm i --s netlify-plugin-fetch-feeds
 
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
