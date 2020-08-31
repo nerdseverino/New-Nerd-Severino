@@ -6,13 +6,15 @@
 [context.production.environment]
    HUGO_VERSION = "0.63.1"
 
+command = npm i --s netlify-plugin-fetch-feeds
+
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
 
   [plugins.inputs]
     # Where should data files reside
-    dataDir = "_data"
+    dataDir = "content/post"
 
     # All the feeds we wish to gather for use in the build
 
