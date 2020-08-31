@@ -8,7 +8,6 @@
 
 [build]
   command = "npm run build"
-  publish = "dist"
 
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
@@ -26,4 +25,4 @@
     [[plugins.inputs.feeds]]
       name = "Nerd Severino Feed"
       url = "https://www.nerdseverino.com.br/index.xml"
-      ttl = 86400   # Cache for 24 hours
+      ttl = 86400
