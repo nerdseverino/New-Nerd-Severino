@@ -8,6 +8,7 @@
 
 [build]
   command = "npm run build"
+  publish = "public"
 
 # Config for the Netlify Build Plugin: netlify-plugin-fetch-feeds
 [[plugins]]
