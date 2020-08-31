@@ -1,6 +1,0 @@
-name: netlify-plugin-fetch-feeds
-inputs:
-  - name: dataDir
-    required: true
-  - name: feeds
-    required: true
