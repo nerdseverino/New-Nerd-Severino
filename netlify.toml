@@ -6,3 +6,17 @@
 [context.production.environment]
    HUGO_VERSION = "0.63.1"
 
+[plugins.inputs]
+    # Where should data files reside
+    dataDir = "site/_data"
+
+    # All the feeds we wish to gather for use in the build
+
+    [[plugins.inputs.feeds]]
+      name = "nerdseverinofeed"
+      url = "https://nerdseverino.com.br/feed.json"
+      ttl = 3600
+    [[plugins.inputs.feeds]]
+      name = "nerdseverinofeed"
+      url = "https://www.nerdseverino.com.br/index.xml"
+      ttl = 86400
