@@ -9,4 +9,4 @@
 	url = git@github.com:nerdseverino/netlify-cms-base.git
 [submodule "netlify-plugin-fetch-feeds"]
 	path = netlify-plugin-fetch-feeds
-	url = git@github.com:nerdseverino/netlify-plugin-fetch-feeds.git
+	url = git@github.com:nerdseverino/netlify-plugin-fetch-feeds.git 
