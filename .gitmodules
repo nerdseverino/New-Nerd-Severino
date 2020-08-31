@@ -6,7 +6,7 @@
 	url = https://github.com/zyro/hyde-x.git
 [submodule "static/admin"]
 	path = static/admin
-	url = git@github.com:nerdseverino/netlify-cms-base.git
+	url = https://github.com/nerdseverino/netlify-cms-base.git
 [submodule "netlify-plugin-fetch-feeds"]
 	path = netlify-plugin-fetch-feeds
-	url = git@github.com:nerdseverino/netlify-plugin-fetch-feeds.git 
+	url = https://github.com/nerdseverino/netlify-plugin-fetch-feeds.git 
