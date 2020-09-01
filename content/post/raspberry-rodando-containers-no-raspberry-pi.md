@@ -45,10 +45,13 @@ No final da instalação é necessário adicionar o usuário PI ao grupo docker:
 
 Se você quer o docker-compose também precisa seguir esses passos adicionais:
 
-**sudo apt-get install -y libffi-dev libssl-dev
-sudo apt-get install -y python3 python3-pip
-sudo apt-get remove python-configparser
-sudo pip3 -v install docker-compose **
+**sudo apt-get install -y libffi-dev libssl-dev**
+\
+**sudo apt-get install -y python3 python3-pip**
+\
+**sudo apt-get remove python-configparser**
+\
+**sudo pip3 -v install docker-compose **
 
 Até aqui deu tudo certo. 
 
