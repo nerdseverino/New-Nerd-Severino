@@ -45,24 +45,11 @@ No final da instalação é necessário adicionar o usuário PI ao grupo docker:
 
 Se você quer o docker-compose também precisa seguir esses passos adicionais:
 
-**sudo apt-get install -y libffi-dev libssl-dev**
-
-**sudo apt-get install -y python3 python3-pip**
-
-**sudo apt-get remove python-configparser**
-
-**sudo pip3 -v install docker-compose **
+**sudo apt-get install -y libffi-dev libssl-dev
+sudo apt-get install -y python3 python3-pip
+sudo apt-get remove python-configparser
+sudo pip3 -v install docker-compose **
 
 Até aqui deu tudo certo. 
 
-Daí pensando pela lógica era apenas repetir o mesmo processo no Raspberry pi zero. Mas aí começou os contra-tempos:
-
-A instalação do Docker em si correu sem problemas, porém o docker-compose não consegui instalar de jeito nenhum.
-
-Mas pro Sysadmin velho de guerra isso é apenas uma oportunidade de fazer uma gabiarra a mais: rodar os containers usando o docker run mesmo! :D 
-
 Quanto aos containers, você precisa procurar imagens que sejam ARM no [Docker Hub](https://hub.docker.com/search?type=image&architecture=arm)
-
-
-
-[PS.: achei uma outra maneira de usar o compose usando um container e o docker run](https://www.freecodecamp.org/news/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef/)
