@@ -52,7 +52,8 @@ Se você quer o docker-compose também precisa seguir esses passos adicionais:
 **sudo apt-get remove python-configparser**
 \
 **sudo pip3 -v install docker-compose **
-
+\
+\
 Até aqui deu tudo certo. 
 
 Quanto aos containers, você precisa procurar imagens que sejam ARM no [Docker Hub](https://hub.docker.com/search?type=image&architecture=arm)
