@@ -29,9 +29,9 @@ Para essa primeira rodada de testes foi usada a última versão disponível do [
 
 Bom pra deixar mais claro os testes, usei 2 modelos diferentes de Raspberry:
 
-\- Raspberry Pi 3 Model B Rev 1.2
+**\- Raspberry Pi 3 Model B Rev 1.2**
 
-\- Raspberry Pi Zero W Rev 1.1
+**\- Raspberry Pi Zero W Rev 1.1**
 
 Bom então começando os trabalhos com o Pi "Maior" eu instalei o Raspbian Lite no cartão e logo depois os pacotes recomendados.
 
@@ -41,7 +41,7 @@ Depois vem a hora de executar o script de instalação do Docker, que é uma mã
 
 No final da instalação é necessário adicionar o usuário PI ao grupo docker:
 
-**sudo usermod -aG docker pi **
+**sudo usermod -aG docker pi**
 
 Se você quer o docker-compose também precisa seguir esses passos adicionais:
 
