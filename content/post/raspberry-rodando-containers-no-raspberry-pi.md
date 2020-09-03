@@ -57,3 +57,337 @@ Se você quer o docker-compose também precisa seguir esses passos adicionais:
 Até aqui deu tudo certo. 
 
 Quanto aos containers, você precisa procurar imagens que sejam ARM no [Docker Hub](https://hub.docker.com/search?type=image&architecture=arm)
+
+
+
+Ficam aqui um exemplo:
+
+
+
+```
+version: '3'
+```
+
+```
+volumes:
+```
+
+```
+  portainer_data:
+```
+
+```
+  nextcloud_data:
+```
+
+```
+#
+```
+
+```
+services:
+```
+
+```
+  nextcloud:
+```
+
+```
+    container_name: nextcloud
+```
+
+```
+    image: armhero/nextcloud
+```
+
+```
+    volumes:
+```
+
+```
+      #- $PWD/nextcloud:/var/www/html  
+```
+
+```
+      - nextcloud_data:/data
+```
+
+```
+    ports:
+```
+
+```
+      - 8091:80
+```
+
+```
+#
+```
+
+```
+  portainer:
+```
+
+```
+    container_name: portainer
+```
+
+```
+    image: portainer/portainer:latest
+```
+
+```
+    command: -H unix:///var/run/docker.sock
+```
+
+```
+    restart: always
+```
+
+```
+    ports:
+```
+
+```
+      - 9000:9000
+```
+
+```
+      - 8000:8000
+```
+
+```
+    volumes:
+```
+
+```
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+
+```
+      - portainer_data:/data
+```
+
+```
+#        
+```
+
+```
+  rpi-monitor:
+```
+
+```
+    container_name: rpi-monitor
+```
+
+```
+    image: michaelmiklis/rpi-monitor:latest
+```
+
+```
+    volumes:
+```
+
+```
+      - /opt/vc:/opt/vc
+```
+
+```
+      - /boot:/boot
+```
+
+```
+      - /sys:/dockerhost/sys:ro
+```
+
+```
+      - /etc:/dockerhost/etc:ro
+```
+
+```
+      - /proc:/dockerhost/proc:ro
+```
+
+```
+      - /usr/lib:/dockerhost/usr/lib:ro
+```
+
+```
+    devices:
+```
+
+```
+      - "/dev/vchiq:/dev/vchiq" 
+```
+
+```
+      - "/dev/vcsm:/dev/vcsm"  
+```
+
+```
+    restart: unless-stopped
+```
+
+```
+    ports:
+```
+
+```
+      - 8888:8888
+```
+
+```
+#
+```
+
+```
+  pihole:
+```
+
+```
+    container_name: pihole
+```
+
+```
+    image: lewixlabs/pihole-pizero
+```
+
+```
+    ports:
+```
+
+```
+      - 53:53/tcp
+```
+
+```
+      - 53:53/udp
+```
+
+```
+      - 67:67/udp
+```
+
+```
+      - 8092:80/tcp
+```
+
+```
+      - 443:443/tcp
+```
+
+```
+    environment:
+```
+
+```
+      TZ: America/Sao_Paulo
+```
+
+```
+      WEBPASSWORD: password
+```
+
+```
+      VIRTUAL_HOST: pihole.local
+```
+
+```
+    volumes:
+```
+
+```
+       - './pihole/etc-pihole/:/etc/pihole/'
+```
+
+```
+       - './pihole/etc-dnsmasq.d/:/etc/dnsmasq.d/'
+```
+
+```
+    dns:
+```
+
+```
+      - 127.0.0.1
+```
+
+```
+      - 1.1.1.1
+```
+
+```
+    # Recommended but not required (DHCP needs NET_ADMIN)
+```
+
+```
+    # https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
+```
+
+```
+    cap_add:
+```
+
+```
+      - NET_ADMIN
+```
+
+```
+#    restart: unless-stopped 
+```
+
+```
+#      
+```
+
+```
+  fail2ban:
+```
+
+```
+    container_name: fail2ban
+```
+
+```
+    image: crazymax/fail2ban:latest
+```
+
+```
+        network_mode: "host"
+```
+
+```
+    cap_add:
+```
+
+```
+      - NET_ADMIN
+```
+
+```
+      - NET_RAW
+```
+
+```
+    volumes:
+```
+
+```
+      - "./data:/data"
+```
+
+```
+      - "/var/log:/var/log:ro"
+```
+
+```
+    env_file:
+```
+
+```
+      - "./fail2ban.env"
+```
+
+```
+    restart: always   
+```
