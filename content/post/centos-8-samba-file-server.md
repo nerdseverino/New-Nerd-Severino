@@ -1,5 +1,5 @@
 ---
-title: Centos 8 - Adicionando o Servidor ao Domínio (Samba4 ou AD MS)
+title: Centos 8 - Adicionando o Servidor ao Domínio (Samba4 ou AD-MS)
 date: '2020-08-25T03:24:50-03:00'
 categories:
   - Tutoriais
