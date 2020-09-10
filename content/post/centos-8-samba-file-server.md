@@ -19,7 +19,7 @@ coverImage: ''
 ---
 ![Samba 4 Logo](/images/uploads/logo-samba-4.png)
 
-Olá Pessoal lembram do tutorial anterior onde criamos um controlador de domínio usando o **Centos 8** e o** Samba 4**, provisionando um Domínio para as estações Windows e Linux da Rede.
+Olá Pessoal lembram do tutorial anterior onde criamos um controlador de domínio usando o **Centos 8** e o ** Samba 4**, provisionando um Domínio para as estações Windows e Linux da Rede.
 
 Hoje a tarefa é dar prosseguimento e colocar o servidor Samba no Domínio como membro. 
 
