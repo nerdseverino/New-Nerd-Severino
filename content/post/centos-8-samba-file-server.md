@@ -1,5 +1,5 @@
 ---
-title: Centos 8 + Samba File Server
+title: Centos 8 - Adicionando o Servidor ao Domínio (Samba4 ou AD MS)
 date: '2020-08-25T03:24:50-03:00'
 categories:
   - Tutoriais
@@ -21,12 +21,9 @@ coverImage: ''
 
 Olá Pessoal lembram do tutorial anterior onde criamos um controlador de domínio usando o **Centos 8** e o** Samba 4**, provisionando um Domínio para as estações Windows e Linux da Rede.
 
-Hoje a tarefa é dar prosseguimento e configurar um File Server usando também o Samba 4 mas usando o modo **Standalone**. 
+Hoje a tarefa é dar prosseguimento e colocar o servidor Samba no Domínio como membro. 
 
-O intuito do tutorial é explicar a configuração do samba em si e também do Linux para fazer o uso das contas do DC da rede, questões sobre recursos da máquina podem variar conforme a demanda de dados e requisições que possuir no seu ambiente real. Nunca é demais lembrar que esse ambiente é de testes :P
 
-_Mesmo assim para um melhor entendimento desse tutorial essa VM que estou usando para escrever o tutorial vai se chamar srvfs01.home.local e ela possui 2 VHD's, um de 100 Gb para o sistema e outro de 200 Gb para os dados.
-_
 
 Vocês podem notar que a primeira parte de instalação do pacote do Samba é bem mais tranquila que a anterior:
 
