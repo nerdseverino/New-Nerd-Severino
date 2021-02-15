@@ -7,22 +7,12 @@ description = "About"
 ## Linux System Administrator | Devops enthusiast | Sysadmin
 
 ## English
-* Unix/Linux support for InterOP external clients and internal business units. 
-Administrate servers running Red Hat Enterprise Linux and another Distributions in a production environment. 
-* Perform OS installs, setup, configuration, security lockdowns and ongoing maintenance of existing infrastructure as well asnew servers. 
-* Perform configuration of disks and file systems. 
-* Propose/recommend new technologies and implement into the existing environment. 
-* Perform daily duties related to system health monitoring and system integrity assurance. 
-* Maintain configuration compliance to avoid risks of system outages or compromised data. 
-* Experience with: - Zimbra - Rancher - Ansible - Gitlab - Docker - Openldap - shell script - Xen Server - Wmware - PF Sense - Sonicwall - Fortigate
+I'm Sysadmin, Free software, Devops tools and culture professional. Learning about cloud providers and your tools. Backup, maintenence operations systems, security are parts of my regular day job.
+I'm really apretiate IOT and mobile computing and like my 3 Raspberry PI.
 
 ## Português
-* Tecnólogo Redes de Computadores.
-* Atua na área de TI por 19 anos.
-* Usa linux desde 2001 (Saudoso Kurumin :D).
-* Atualmente é Sysadmin.
-* Entusiasta de DevOps e participante dos meetups de docker.
-* Proprietário de 03 Raspberry PI :D
+Sou um Sysadmin com expertise em software livre, ferramentas de DevOps, Cloud providers. Tarefas como manutenção de sistemas operacionais e backup e segurança de sistemas, fazem parte da rotina de trabalho.
+Entusiasta de computação portátil e Internet das coisas, tenho alguns Raspberry Pi pra brincar e soltar a imaginação em projetos do tipo faça você mesmo. 
 
 <p align="center">
 <img src="/images/uploads/raspberry-pi-logo.png" width="150" title="Raspberry pi logo">
