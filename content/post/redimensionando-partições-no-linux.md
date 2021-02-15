@@ -14,7 +14,7 @@ autoThumbnailImage: false
 thumbnailImagePosition: top
 coverImage: ''
 ---
-![LVM LOGO](/images/uploads/how-to-resize-extend-lvm-partitioned-hard-disks-logical_volume_manager_lvm_logo.jpg)
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/nerdseverino/New-Nerd-Severino/master/static/images/uploads/how-to-resize-extend-lvm-partitioned-hard-disks-logical_volume_manager_lvm_logo.jpg" /></div>
 
 Uma dúvida recorrente e também uma tarefa cotidiana do Sysadmin é ajustar (geralmetne aumentar) partições no Linux para evitar a interrupção de serviços. 
 
@@ -185,6 +185,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 **Obs.: Se sua partição está como EXT4/3, use o comando resize2fs para fazer essa etapa.**
 
 Depois de tudo isso podemos verificar o novo tamanho da partição com o comando df
+
 ```
 [root@lab1 ~]# df -h
 
@@ -206,4 +207,5 @@ tmpfs                    496M     0  496M   0% /sys/fs/cgroup
 
 tmpfs                    100M     0  100M   0% /run/user/1000
 ```
+
 Com isso redimensionamos a partição /home do servidor, até a próxima pessoal!
