@@ -14,11 +14,17 @@ autoThumbnailImage: false
 thumbnailImagePosition: top
 coverImage: ''
 ---
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/nerdseverino/New-Nerd-Severino/master/static/images/uploads/how-to-resize-extend-lvm-partitioned-hard-disks-logical_volume_manager_lvm_logo.jpg" /></div>
+<p align="center">
+
+<img src="/images/uploads/how-to-resize-extend-lvm-partitioned-hard-disks-logical_volume_manager_lvm_logo.jpg" width="500" title="Raspberry pi logo">
+
+</p>
+
+
 
 Uma dúvida recorrente e também uma tarefa cotidiana do Sysadmin é ajustar (geralmetne aumentar) partições no Linux para evitar a interrupção de serviços. 
 
-**_Obs.: Esse Lab foi feito com uma VM no Virtualbox com um disco apenas de 80Gb de tamanho no Centos 7, o procedimento pode variar para outras distribuições mas os passos são bem semelhantes_**
+_**Obs.: Esse Lab foi feito com uma VM no Virtualbox com um disco apenas de 80Gb de tamanho no Centos 7, o procedimento pode variar para outras distribuições mas os passos são bem semelhantes**_
 
 Primeiro eu recomendo que leia esse bom artigo sobre partições no Linux:
 
