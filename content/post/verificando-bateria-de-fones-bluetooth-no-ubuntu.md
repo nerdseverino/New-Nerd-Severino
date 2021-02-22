@@ -35,7 +35,7 @@ Já a algum tempo eu queria saber o status da bateria dos meus fones bluetooth q
 
 Eu fiz algumas pesquisas rápidas pela internet e encontrei esse respositório do Github (<https://github.com/Coutj/Bluetooth_project>) que no fim das contas me entregou o que eu precisava: o nível de bateria de meus dispositivos.
 
-**Pra tudo funcionar eu tive que editar o setup.sh colocando o pip3 no lugar do pip. **
+**Pra tudo funcionar eu tive que editar o setup.sh colocando o pip3 no lugar do pip.**
 
 Depois disso foi só alegria :)
 
